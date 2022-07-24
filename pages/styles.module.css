@@ -1,5 +1,8 @@
 .header {
   width: 100%;
-  max-width: 1200px;
   padding: 2rem 0 2rem;
+  background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
