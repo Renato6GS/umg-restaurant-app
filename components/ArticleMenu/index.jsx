@@ -11,10 +11,10 @@ export default function SectionMenu({ titleSection, data = [] }) {
       </header>
       <ul className={styles.ul}>
         {data[titleSection].map(({ id, title, price }) => {
-          const KEY = `${titleSection}-${id}`;
+          const KEY = `${titleSection}_${id}`;
           return (
             <li key={KEY} className={styles.li}>
-              <Link href={KEY}>
+              <Link href={`/detail/${KEY}`}>
                 <a className={styles.option}>
                   {title}
                   <span className={styles.price}>{price}</span>

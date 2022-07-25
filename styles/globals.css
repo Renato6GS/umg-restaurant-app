@@ -20,6 +20,13 @@ a {
   --white: #E7CEB2;
   --brown: #2E2C2A;
   --white-light: #F4F3EE;
+
+  --shadow-color: 32deg 28% 57%;
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.27),
+    0.9px 1.6px 2.1px -0.8px hsl(var(--shadow-color) / 0.27),
+    2.3px 3.8px 5px -1.7px hsl(var(--shadow-color) / 0.27),
+    5.6px 9.2px 12.1px -2.5px hsl(var(--shadow-color) / 0.27);
 }
 
 @font-face {
