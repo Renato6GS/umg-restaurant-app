@@ -1,6 +1,6 @@
-import React from 'react';
-import Gallery from '../components/Gallery';
-import Header from '../components/Header';
+import Menu from 'components/Menu';
+import Gallery from 'components/Gallery';
+import Header from 'components/Header';
 
 import styles from './styles.module.css';
 
@@ -8,11 +8,13 @@ export default function Home() {
   return (
     <>
       <header className={styles.header}>
-        <Header link='Ver menú' />
+        <Header link='Ver menú' href='#menu' />
         <Gallery />
       </header>
 
-      <main>adsf</main>
+      <main className={styles.main} id='menu'>
+        <Menu />
+      </main>
 
       <footer>sdf</footer>
     </>

@@ -32,6 +32,7 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .column:nth-child(1), .column:nth-child(5) {
@@ -52,4 +53,5 @@
 .image {
   width: 100%;
   vertical-align: top;
+  border-radius: 1rem;
 }
