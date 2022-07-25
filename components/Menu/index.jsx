@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import { MENU } from 'constans/MENU';
+import { MENU } from 'constants/MENU';
 import ArticleMenu from 'components/ArticleMenu';
 
 export default function Menu() {
