@@ -3,6 +3,7 @@ import Gallery from 'components/Gallery';
 import Header from 'components/Header';
 
 import styles from './styles.module.css';
+import Footer from 'components/Footer';
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
         <Menu />
       </main>
 
-      <footer>sdf</footer>
+      <footer className={styles.footer}>
+        <Footer />
+      </footer>
     </>
   );
 }

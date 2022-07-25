@@ -14,3 +14,12 @@
   background-color: var(--white-light);
   padding: 3rem 0;
 }
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--brown);
+  padding: 3rem 0 6rem;
+}
