@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 export default function Detail({ results }) {
   const [group, idGroup] = results;
-  const { id, title, price, desc, img } = MENU[group][idGroup];
+  const { title, price, desc, img } = MENU[group][idGroup];
 
   return (
     <>
