@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .follow {
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+
+.socialMediaContainer {
+  width: 40%;
+}
+
+.follow {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ul {
+  display: flex;
+  padding: 0;
+  gap: 1.3rem;
+}
+
+.li {
+  display: flex;
+}
+
+.image {
+  filter: invert(90%) sepia(9%) saturate(904%) hue-rotate(341deg) brightness(94%) contrast(92%);
+}
+
