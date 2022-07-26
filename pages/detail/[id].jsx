@@ -1,6 +1,7 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import { MENU } from 'constants/MENU';
+import Head from 'next/head';
 
 import styles from './styles.module.css';
 
@@ -10,6 +11,11 @@ export default function Detail({ results }) {
 
   return (
     <>
+      <Head>
+        <title>{title} - UMG^REST</title>
+        <meta name='description' content='El mejor restaurante de alta gama en el país de Guatemala.' />
+      </Head>
+
       <header className={styles.header}>
         <Header link='Regresar' href='/#menu' />
       </header>
