@@ -1,7 +1,10 @@
-import React from 'react';
-
 import styles from './styles.module.css';
 
 export default function Loader() {
-  return <span className={styles.loader}></span>;
+  return (
+    <div className={styles.loadingContainer}>
+      <span className={styles.loader}></span>
+      <span className={styles.label}>Cargando...</span>
+    </div>
+  );
 }
