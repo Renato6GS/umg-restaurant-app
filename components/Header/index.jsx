@@ -1,18 +1,28 @@
-import React from 'react';
 import Link from 'next/link';
 
 import styles from './styles.module.css';
 
-export default function Header({ href = '/', link = 'nulo' }) {
+export default function Header({ showCenterMenu = false }) {
   return (
     <header className={styles.header}>
       <Link href='/'>
         <a className={styles.logo}>
-          <h1 className={styles.title}>UMG^REST</h1>
+          <img src='/pizzafast.svg' width={32} alt={'PizzaFast Logo'} />
+          <h1 className={styles.title}>PizzaFast</h1>
         </a>
       </Link>
-      <Link href={href}>
-        <a className={styles.partner}>{link}</a>
+      {showCenterMenu && (
+        <nav className={styles.nav}>
+          <Link href={'#offers'}>
+            <a className={styles.navLinks}>Ofertas</a>
+          </Link>
+          <Link href={'#menu-pizafast'}>
+            <a className={styles.navLinks}>Menú</a>
+          </Link>
+        </nav>
+      )}
+      <Link href={'/showCar'}>
+        <a className={styles.partner}>Ver carrito</a>
       </Link>
     </header>
   );

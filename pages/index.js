@@ -1,25 +1,27 @@
 import Menu from 'components/Menu';
-import Gallery from 'components/Gallery';
+import Feed from 'components/Feed';
 import Header from 'components/Header';
 
 import styles from './styles.module.css';
 import Footer from 'components/Footer';
 import Head from 'next/head';
+import Offers from 'components/Offers';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - UMG^REST</title>
-        <meta name='description' content='El mejor restaurante de alta gama en el país de Guatemala.' />
+        <title>Home - PizzaFast</title>
+        <meta name='description' content='El mejor restaurante de pizzas en Guatemala.' />
       </Head>
 
       <header className={styles.header}>
-        <Header link='Ver menú' href='#menu' />
-        <Gallery />
+        <Header showCenterMenu />
+        <Feed />
       </header>
 
       <main className={styles.main} id='menu'>
+        <Offers />
         <Menu />
       </main>
 

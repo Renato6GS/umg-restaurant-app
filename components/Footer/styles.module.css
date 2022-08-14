@@ -5,7 +5,8 @@
   justify-content: space-between;
 }
 
-.logo, .follow {
+.logo,
+.follow {
   padding: 0;
   margin: 0;
   font-size: 1.25rem;
@@ -33,6 +34,5 @@
 }
 
 .image {
-  filter: invert(90%) sepia(9%) saturate(904%) hue-rotate(341deg) brightness(94%) contrast(92%);
+  filter: invert(99%) sepia(17%) saturate(213%) hue-rotate(281deg) brightness(113%) contrast(90%);
 }
-

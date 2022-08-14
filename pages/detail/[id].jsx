@@ -7,26 +7,51 @@ import styles from './styles.module.css';
 
 export default function Detail({ results }) {
   const [group, idGroup] = results;
-  const { title, price, desc, img } = MENU[group][idGroup];
+  const { id, title, price, desc, image } = MENU[group][idGroup];
+
+  const handleClick = () => {
+    const key = `${group}_${id}`;
+    const keys = Object.keys(localStorage);
+    let i = keys.length;
+    let obj = {};
+    let found = false;
+    loop: while (i--) {
+      const item = JSON.parse(localStorage.getItem(keys[i]));
+      if (item.id === id && item.group === group) {
+        obj = item;
+        found = true;
+        break loop;
+      }
+    }
+    if (!found) {
+      obj = { group, id, quantity: 1 };
+    } else {
+      obj.quantity += 1;
+    }
+    localStorage.setItem(key, JSON.stringify(obj));
+    alert('Se ha agregado a tu carrito');
+  };
 
   return (
     <>
       <Head>
-        <title>{title} - UMG^REST</title>
+        <title>{title} - PizzaFast</title>
         <meta name='description' content='El mejor restaurante de alta gama en el país de Guatemala.' />
       </Head>
 
       <header className={styles.header}>
-        <Header link='Regresar' href='/#menu' />
+        <Header />
       </header>
       <main className={styles.main}>
         <div className={styles.resultContainer}>
-          <img src={img} alt={title} className={styles.img} />
+          <img src={image} alt={title} className={styles.img} />
           <article className={styles.article}>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.desc}>{desc}</p>
-            <p className={styles.price}>{price}</p>
-            <button className={styles.btnComprar}>Comprar</button>
+            <p className={styles.price}>Q. {price}</p>
+            <button className={styles.btnComprar} onClick={handleClick}>
+              Comprar
+            </button>
           </article>
         </div>
       </main>

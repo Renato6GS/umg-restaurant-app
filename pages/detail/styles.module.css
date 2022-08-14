@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   padding: 2rem 0 2rem;
-  background-color: var(--brown);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--brown);
+  background-color: var(--primary-color);
   padding: 3rem 0 6rem;
 }
 
@@ -55,11 +55,12 @@
   color: var(--brown);
 }
 
-.desc, .price {
+.desc,
+.price {
   font-family: 'Lato Regular', Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   line-height: 1.8rem;
-  color: var(--brown)
+  color: var(--brown);
 }
 
 .price {
@@ -70,17 +71,18 @@
 .btnComprar {
   width: 7rem;
   padding: 13px 13px;
-  background-color: var(--brown);
+  background-color: var(--primary-color);
   color: var(--white);
   border-radius: 2rem;
   align-self: flex-end;
   cursor: pointer;
-  border: 2px solid var(--brown);
+  border: 2px solid transparent;
   font-size: 1rem;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .btnComprar:hover {
-  background-color: var(--white-light);
-  color: var(--brown);
+  background-color: var(--white);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }

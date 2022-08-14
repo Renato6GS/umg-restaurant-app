@@ -2,9 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
+  background-color: var(--white);
 }
 
 a {
@@ -17,24 +18,25 @@ a {
 }
 
 :root {
-  --white: #E7CEB2;
-  --brown: #2E2C2A;
-  --white-light: #F4F3EE;
+  --white: #f2f2f2;
+  --brown: #2e2c2a;
+  --white-light: #f4f3ee;
+  --primary-color: #f54749;
+  --red-light: #e79d9f;
+  --black: #000;
 
   --shadow-color: 32deg 28% 57%;
-  --shadow-elevation-medium:
-    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.27),
-    0.9px 1.6px 2.1px -0.8px hsl(var(--shadow-color) / 0.27),
-    2.3px 3.8px 5px -1.7px hsl(var(--shadow-color) / 0.27),
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.27),
+    0.9px 1.6px 2.1px -0.8px hsl(var(--shadow-color) / 0.27), 2.3px 3.8px 5px -1.7px hsl(var(--shadow-color) / 0.27),
     5.6px 9.2px 12.1px -2.5px hsl(var(--shadow-color) / 0.27);
 }
 
 @font-face {
   font-family: 'Lato Regular';
-  src: url("/fonts/Lato-Regular.woff2") format("woff2");
+  src: url('/fonts/Lato-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Lato Bold';
-  src: url("/fonts/Lato-Bold.woff2") format("woff2");
+  src: url('/fonts/Lato-Bold.woff2') format('woff2');
 }
