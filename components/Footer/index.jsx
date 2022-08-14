@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <Link href='/'>
-        <a className={styles.logo}>PizzaFast</a>
+        <a className={styles.logo}>UMG^REST</a>
       </Link>
       <div className={styles.socialMediaContainer}>
         <h5 className={styles.follow}>Síguenos</h5>

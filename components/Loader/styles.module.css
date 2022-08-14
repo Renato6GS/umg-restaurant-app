@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0,0, .2);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,7 +15,7 @@
 }
 
 .label {
-  color: var(--primary-color);
+  color: var(--brown);
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -25,10 +25,10 @@
   height: 98px;
   display: inline-block;
   position: relative;
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
   box-sizing: border-box;
   /* color: rgba(255, 61, 0, 0.9); */
-  color: var(--primary-color);
+  color: var(--brown);
   border-radius: 20px 20px 4px 4px;
   background: #fff;
   animation: fill 2s linear infinite alternate;
@@ -41,8 +41,8 @@
   position: absolute;
   left: 50%;
   top: 0%;
-  transform: translate(-50%, -95%);
-  border: 2px solid #fff;
+  transform: translate(-50% , -95%);
+  border: 2px solid #FFF;
   border-bottom: none;
   background: #fff;
   width: 15px;
@@ -51,21 +51,12 @@
 }
 
 @keyframes fill {
-  0% {
-    box-shadow: 0 0 inset;
-  }
-  50%,
-  100% {
-    box-shadow: 0 -98px inset;
-  }
+  0% { box-shadow: 0 0  inset }
+  50% , 100% { box-shadow: 0 -98px inset }
 }
 
+
 @keyframes fillNeck {
-  0%,
-  50% {
-    box-shadow: 0 0 inset;
-  }
-  100% {
-    box-shadow: 0 -20px inset;
-  }
+  0% , 50%{ box-shadow: 0 0  inset }
+  100% { box-shadow: 0 -20px inset }
 }
